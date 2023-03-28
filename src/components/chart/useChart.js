@@ -9,7 +9,7 @@ export default function useChart(options) {
 
   const LABEL_TOTAL = {
     show: true,
-    label: 'Total',
+    label: 'Total Downloads',
     color: theme.palette.text.secondary,
     fontSize: theme.typography.subtitle2.fontSize,
     fontWeight: theme.typography.subtitle2.fontWeight,
@@ -26,17 +26,7 @@ export default function useChart(options) {
 
   const baseOptions = {
     // Colors
-    colors: [
-      theme.palette.primary.main,
-      theme.palette.warning.main,
-      theme.palette.info.main,
-      theme.palette.error.main,
-      theme.palette.success.main,
-      theme.palette.warning.dark,
-      theme.palette.success.darker,
-      theme.palette.info.dark,
-      theme.palette.info.darker,
-    ],
+    colors: ['black', '#3acbb2'],
 
     // Chart
     chart: {
@@ -45,6 +35,7 @@ export default function useChart(options) {
       // animations: { enabled: false },
       foreColor: theme.palette.text.disabled,
       fontFamily: theme.typography.fontFamily,
+      stacked: true,
     },
 
     // States
@@ -71,7 +62,7 @@ export default function useChart(options) {
         shadeIntensity: 0,
         opacityFrom: 0.4,
         opacityTo: 0,
-        stops: [0, 100],
+        stops: [0, 500],
       },
     },
 
@@ -104,15 +95,16 @@ export default function useChart(options) {
 
     // Markers
     markers: {
-      size: 0,
+      size: 10,
       strokeColors: theme.palette.background.paper,
     },
 
     // Tooltip
     tooltip: {
       x: {
-        show: false,
+        show: true,
       },
+      markers: { show: true },
     },
 
     // Legend

@@ -35,12 +35,12 @@ const SECONDARY = {
 };
 
 const INFO = {
-  lighter: '#D0F2FF',
-  light: '#74CAFF',
+  lighter: 'white',
+  light: 'white',
   main: '#1890FF',
-  dark: '#0C53B7',
-  darker: '#04297A',
-  contrastText: '#fff',
+  dark: '#3acbb2',
+  darker: 'black',
+  contrastText: 'black',
 };
 
 const SUCCESS = {
@@ -86,8 +86,8 @@ const palette = {
     disabled: GREY[500],
   },
   background: {
-    paper: '#fff',
-    default: GREY[100],
+    paper: GREY[100],
+    default: '#f0f0f0',
     neutral: GREY[200],
   },
   action: {

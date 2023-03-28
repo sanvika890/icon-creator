@@ -5,17 +5,17 @@ import { ListItemIcon, ListItemButton } from '@mui/material';
 // ----------------------------------------------------------------------
 
 export const StyledNavItem = styled((props) => <ListItemButton disableGutters {...props} />)(({ theme }) => ({
-  ...theme.typography.body2,
-  height: 48,
+  ...theme.typography.h5,
+  height: '10vh',
   position: 'relative',
   textTransform: 'capitalize',
   color: theme.palette.text.secondary,
-  borderRadius: theme.shape.borderRadius,
+  borderRadius: 0,
 }));
 
 export const StyledNavItemIcon = styled(ListItemIcon)({
-  width: 22,
-  height: 22,
+  width: 30,
+  height: 30,
   color: 'inherit',
   display: 'flex',
   alignItems: 'center',
